@@ -73,7 +73,7 @@ a {
   line-height: 16px;
 }
 
-header {
+.headline {
   background: url("assets/images/Header-llustration-desktop.svg");
   padding-left: 24px;
   padding-right: 24px;
@@ -103,13 +103,16 @@ header {
   color: #36b37f;
 }
 
-.socials {
+/*.socials {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+  flex-direction: column;
+}*/
 
 .socials ul {
+  display: flex;
+  justify-content: center;
   list-style: none;
   font-style: normal;
   font-weight: 500;
@@ -118,15 +121,15 @@ header {
   color: #505f79;
   border-top: 34px;
   height: 20px;
-  text-align: center;
   padding: 0;
 }
 
-.socials span {
+.socials li {
   padding: 10px 10px 10px 10px;
 }
 
 .arrow {
+  display: block;
   margin-top: 60px;
   height: 40px;
   text-align: center;
