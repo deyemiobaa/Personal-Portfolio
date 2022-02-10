@@ -1,0 +1,138 @@
+body {
+  width: auto;
+  margin: 0;
+  height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.top-nav {
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-style: normal;
+  height: 44px;
+  color: #28352F;
+}
+
+.top-nav span {
+  padding-right: 10px;
+  
+}
+
+.time {
+  padding-left: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.28px;
+}
+
+.menu-nav {
+  padding: 5px 0px;
+  text-align: center;
+  height: 50px;
+  font-size: 30px;
+}
+
+.menu-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 500;
+  align-items: center;
+  color: #28352F;
+}
+
+.menu-icon {
+  font-size: 30px;
+  padding-right: 50px;
+  
+}
+
+.name {
+  padding-left: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+header {
+  background: url("assets/images/Header-llustration-desktop.svg");
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.intro h1{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
+}
+
+.intro p{
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #172B4D;
+}
+
+.intro span {
+  color: #36B37F;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.socials ul {
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #505F79;
+  border-top: 34px;
+  height: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+
+.socials span {
+  margin: 0px;
+  padding: 10px;
+  flex: 1;
+}
+
+.arrow {
+  margin-top: 60px;
+  height: 40px;
+  text-align: center;
+}
