@@ -26,7 +26,7 @@ a {
   color: #28352f;
 }
 
-.top-nav span { padding-right: 10px;}
+.top-nav span { padding-right: 10px; }
 
 .time {
   padding-left: 30px;
@@ -63,7 +63,6 @@ a {
 .menu-icon {
   font-size: 30px;
   padding-right: 50px;
-  
 }
 
 .name {
@@ -87,7 +86,7 @@ header {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .intro p {
@@ -123,11 +122,9 @@ header {
   padding: 0;
 }
 
-
 .socials span {
   margin: 0px;
-  padding: 10;
-  flex: 1;
+  padding: 10px 10px 10px 10px;
 }
 
 .arrow {
