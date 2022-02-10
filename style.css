@@ -9,7 +9,8 @@ a {
 }
 
 .top-nav {
-  padding: 0px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 }
 
@@ -19,22 +20,19 @@ a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   height: 44px;
-  color: #28352F;
+  color: #28352f;
 }
 
-.top-nav span {
-  padding-right: 10px;
-  
-}
+.top-nav span { padding-right: 10px;}
 
 .time {
   padding-left: 30px;
   font-style: normal;
   font-weight: 500;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -42,7 +40,8 @@ a {
 }
 
 .menu-nav {
-  padding: 5px 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
   height: 50px;
   font-size: 30px;
@@ -55,10 +54,10 @@ a {
   margin: 0;
   padding: 0;
   font-style: normal;
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   align-items: center;
-  color: #28352F;
+  color: #28352f;
 }
 
 .menu-icon {
@@ -81,8 +80,8 @@ header {
   padding-right: 24px;
 }
 
-.intro h1{
-  font-family: Inter;
+.intro h1 {
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -91,33 +90,33 @@ header {
   color: #172B4D;
 }
 
-.intro p{
-  font-family: Inter;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #172B4D;
+.intro p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
 }
 
 .intro span {
-  color: #36B37F;
+  color: #36b37f;
 }
 
 .socials {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
+
 .socials ul {
   list-style: none;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
-  color: #505F79;
+  color: #505f79;
   border-top: 34px;
   height: 20px;
   text-align: center;
@@ -127,7 +126,7 @@ color: #172B4D;
 
 .socials span {
   margin: 0px;
-  padding: 10px;
+  padding: 10;
   flex: 1;
 }
 
