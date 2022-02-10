@@ -103,13 +103,6 @@ a {
   color: #36b37f;
 }
 
-/*.socials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-direction: column;
-}*/
-
 .socials ul {
   display: flex;
   justify-content: center;
