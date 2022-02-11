@@ -320,7 +320,7 @@ a {
   color: #fff;
 }
 
-.about-me-button:hover { box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24); }
+.about-me-button:hover { box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24); }
 
 .about-me-button:active { background: #008552; }
 
