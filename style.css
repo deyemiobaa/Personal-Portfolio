@@ -75,6 +75,8 @@ a {
 
 .headline {
   background: url("assets/images/Header-llustration-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   padding-left: 24px;
   padding-right: 24px;
 }
