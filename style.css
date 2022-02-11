@@ -72,7 +72,7 @@ a {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #28352F;
+  color: #28352f;
 }
 
 .headline {
@@ -162,7 +162,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 24px;
-  text-align : center;
+  text-align: center;
   height: 4px;
   width: 48px;
 }
@@ -200,7 +200,7 @@ a {
 }
 
 .work-details p {
-  margin-top: 12px !important;
+  margin: 12px 0 0 0 !important;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -208,7 +208,6 @@ a {
   line-height: 32px;
   text-align: center;
   color: #3a4a42;
-  margin: 0;
   padding: 0 10px;
 }
 
@@ -283,9 +282,8 @@ a {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   margin-bottom: 24px;
-
 }
 
 .about-me-p {
@@ -295,7 +293,7 @@ a {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #42526E;
+  color: #42526e;
   margin: 0 0 24px 0;
 }
 
@@ -340,7 +338,6 @@ a {
   align-content: space-evenly;
 }
 
-
 .card-details {
   display: grid;
   align-content: space-between;
@@ -369,7 +366,6 @@ a {
   margin-right: 12px;
   margin-left: 12px;
   justify-content: center;
-
 }
 
 .card-details li {
