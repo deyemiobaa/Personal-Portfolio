@@ -368,10 +368,12 @@ a {
   margin-bottom: 8px;
   margin-right: 8px;
 }
+
 .form {
   background-image: url("assets/images/illustration-contact-form.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
+  
 }
 
 .form h1 {
@@ -390,6 +392,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .form h1 {
@@ -401,18 +404,18 @@ a {
   color: #172b4d;
 }
 
-form {
-  width: 100%;
+form { width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
 }
+
 
 .form-inputs {
   padding-left: 0;
   width: 60%;
 }
 
-.inputs {
+.form-inputs li {
   display: flex;
   justify-content: center;
   list-style: none;
@@ -426,7 +429,7 @@ input {
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -441,7 +444,7 @@ input {
   border: 1px solid #60c095;
   box-sizing: border-box;
   border-radius: 4px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -449,24 +452,13 @@ input {
   padding: 12px;
 }
 
-.form-inputs {
-  padding-left: 0;
-  width: 60%;
-}
-
-.inputs {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 24px;
-}
 .form button {
   padding: 12px;
   background: #36b37f;
   border-radius: 4px;
   text-align: center;
   border: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -475,13 +467,9 @@ input {
   color: #fff;
 }
 
-.form button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
+.form button:hover { box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24); }
 
-.form button:active {
-  background: #008552;
-}
+.form button:active { background: #008552; }
 
 .form-socials ul {
   display: flex;
@@ -498,6 +486,16 @@ input {
   margin-top: 0;
 }
 
-.form-socials li {
-  padding: 10px 10px 10px 10px;
+.form-socials li { padding: 10px 10px 10px 10px; }
+
+footer {
+  height: 189px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  margin-bottom: 147px;
 }
