@@ -8,43 +8,13 @@ a {
   color: inherit;
 }
 
-.top-nav {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-}
-
-.top-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  height: 44px;
-  color: #28352f;
-}
-
-.top-nav span { padding-right: 10px; }
-
-.time {
-  padding-left: 30px;
-  font-style: normal;
-  font-weight: 500;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: -0.28px;
-}
-
 .menu-nav {
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
   height: 50px;
   font-size: 30px;
+  margin-top: 48px;
 }
 
 .menu-nav ul {
@@ -122,9 +92,7 @@ a {
   margin-bottom: 62px;
 }
 
-.socials li {
-  padding: 10px 10px 10px 10px;
-}
+.socials li { padding: 10px 10px 10px 10px; }
 
 .recent-works {
   display: grid;
@@ -174,12 +142,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
 .works {
-  background: url("assets/images/Img-Plaholder.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #ebf0ee;
   height: 474px;
   display: flex;
   flex-direction: column;
@@ -211,15 +178,12 @@ a {
   padding: 0 10px;
 }
 
-.work-details ul {
-  margin: 0;
-}
-
 .language-tags {
   display: grid;
   grid-template-columns: auto auto auto auto;
   justify-content: space-evenly;
   width: 100%;
+  margin: 0 11px;
   padding: 0;
 }
 
@@ -330,20 +294,21 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 
-.card img {
-  width: 100%;
+.card-img {
+  text-align: center;
 }
 
 .card {
   height: 352px;
-  background: url("assets/images/card-img-plaholder.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #ebf0ee;
   display: grid;
   grid-template-rows: auto auto;
   align-content: space-evenly;
+  border-radius: 8px;
+  width: 100%;
 }
 
 .card-details {
@@ -392,3 +357,4 @@ a {
   margin-bottom: 8px;
   margin-right: 8px;
 }
+
