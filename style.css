@@ -376,13 +376,15 @@ a {
   background-repeat: no-repeat;
 }
 
-.form h1 {
+.form h2 {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  padding: 0 24px;
 }
 
 form {
