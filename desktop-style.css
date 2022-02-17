@@ -36,6 +36,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 .desktop-nav {
   list-style: none;
   display: flex;
@@ -51,9 +52,7 @@ header {
   color: #344563;
 }
 
-.desktop-nav li {
-  padding: 10px 12px;
-}
+.desktop-nav li { padding: 10px 12px; }
 
 .headline {
   display: flex;
@@ -63,18 +62,14 @@ header {
   height: 436px;
 }
 
-.headline h1 {
-  height: 114px;
-}
+.headline h1 { height: 114px; }
 
 .headline p {
   height: 96px;
   margin: 24px 0 0 0;
 }
 
-.socials {
-  margin-top: 24px;
-}
+.socials { margin-top: 24px; }
 
 .arrow {
   display: flex;
@@ -202,7 +197,6 @@ header {
   align-items: center;
 }
 
-
 .card-details ul {
   margin: 24px 0 0 0;
 }
@@ -238,6 +232,14 @@ form {
 
 form ul {
   display: block;
+}
+
+input {
+  width: 85%;
+}
+
+.form textarea {
+  width: 85%;
 }
 
 footer {
