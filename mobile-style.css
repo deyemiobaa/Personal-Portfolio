@@ -204,7 +204,7 @@ a {
 
 .works-button {
   padding: 12px;
-  width: 98px;
+  width: 100px;
   height: 24px;
   margin-bottom: 20px;
   background: #1e488f;
@@ -635,7 +635,7 @@ footer {
   }
 
   .about-me-text {
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
     background: none;
     height: 240px;
