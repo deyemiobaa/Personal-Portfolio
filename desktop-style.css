@@ -8,8 +8,9 @@ body {
 .mobile-nav { display: none; }
 
 header {
+  height: 636px;
   background: url(assets/images/Header-llustration-desktop.svg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top -2px left 27px;
   padding: 0;
@@ -43,7 +44,7 @@ header {
   width: 65%;
   margin: auto;
   padding: 160px 0;
-  height: 756px;
+  height: 436px;
 }
 
 .headline h1 {
@@ -59,7 +60,6 @@ header {
   margin-top: 24px;
 }
 
-
 .arrow {
   display: flex;
   height: 114px;
@@ -69,15 +69,15 @@ header {
   margin-top: 24px;
 }
 
+.bar { display: none; }
+
 .recent-works {
+  height: 1084px;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  margin: 0 135px;
-  padding: 0;
-}
-
-.bar {
-  display: none;
+  margin: auto;
+  padding: 80px 0;
 }
 
 .title, .title h2 {
@@ -86,4 +86,113 @@ header {
   height: 48px;
   margin: auto;
 }
+
+.recent-works-cards {
+  height: 988px;
+  width: 100%;
+  margin: 52px auto 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 32px;
+  column-gap: 24px;
+}
+
+.work-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.work-details h3 {
+  padding: 0;
+  margin: 0 !important;
+  height: 57px;
+}
+
+.work-details a {
+  margin: 0;
+}
+
+.language-tags {
+  height: 32px;
+  margin: 0;
+}
+
+.about-me {
+  width: 90%;
+  margin: 112px auto 0 auto;
+  padding: 80px 0;
+  height: 648px;
+  justify-content: space-evenly;
+}
+
+.about-me-text {
+  width: 65%;
+  margin: 0 auto 0 auto;
+  background: none;
+  height: 240px;
+  justify-content: space-between;
+}
+
+.about-me-text h4 {
+  margin: 0;
+}
+
+.about-me-text p {
+  height: 96px;
+  margin: 0;
+}
+
+.about-me-card {
+  height: 352px;
+  padding: 4px 8px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 128px 144px;
+  justify-content: space-evenly;
+}
+
+.card-img img {
+  display: none;
+}
+
+.lang {
+  background: url("assets/images/lang-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.framework {
+  background: url("assets/images/framework-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.skills {
+  background: url("assets/images/skills-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card-details ul {
+  margin: 24px 0 0 0;
+}
+
+.card-tags {
+  margin: 24px 0;
+}
+
 
