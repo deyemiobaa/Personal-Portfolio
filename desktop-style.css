@@ -1,7 +1,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  height: 3846px;
+  height: 3504.94px;
   margin: 0;
 }
 
@@ -9,11 +9,27 @@ body {
 
 header {
   height: 636px;
-  background: url(assets/images/Header-llustration-desktop.svg);
+  background: url('assets/images/Header-llustration-desktop.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top -2px left 27px;
+  background-position: top 0 left 27px;
   padding: 0;
+}
+
+.wrapper {
+  background: 
+    url("assets/images/right-about-me.svg"),
+    url("assets/images/left-about-me.svg"),
+    url("assets/images/illustration-1-contact-form-desktop.svg"),
+    url("assets/images/illustration-2-contact-form-desktop.svg"),
+    url("assets/images/illustratoin-3-contact-form-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 
+    top 1900px right 0,
+    top 2150px left -50px,
+    bottom 72.49px left 0,
+    bottom 156.14px left 274px,
+    bottom 74.83px right 0;
 }
 
 .navigation {
@@ -123,7 +139,7 @@ header {
   margin: 112px auto 0 auto;
   padding: 80px 0;
   height: 648px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .about-me-text {
@@ -195,4 +211,42 @@ header {
   margin: 24px 0;
 }
 
+.form {
+  margin: auto auto 142px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 24px;
+  height: 330px;
+  padding: 80px 0;
+  background: none;
+  align-items: center;
+}
 
+.form h2 {
+  height: 256px;
+  font-size: 30px;
+  line-height: normal;
+  text-align: start;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  height: 330px;
+}
+
+form ul {
+  display: block;
+}
+
+footer {
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #dfe1e6;
+}
+
+footer h4 {
+  display: none;
+}
