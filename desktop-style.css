@@ -1,0 +1,89 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  height: 3846px;
+  margin: 0;
+}
+
+.mobile-nav { display: none; }
+
+header {
+  background: url(assets/images/Header-llustration-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top -2px left 27px;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+.desktop-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  align-items: center;
+  color: #344563;
+}
+
+.desktop-nav li {
+  padding: 10px 12px;
+}
+
+.headline {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  padding: 160px 0;
+  height: 756px;
+}
+
+.headline h1 {
+  height: 114px;
+}
+
+.headline p {
+  height: 96px;
+  margin: 24px 0 0 0;
+}
+
+.socials {
+  margin-top: 24px;
+}
+
+
+.arrow {
+  display: flex;
+  height: 114px;
+  margin-top: 0;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 24px;
+}
+
+.recent-works {
+  display: flex;
+  flex-direction: column;
+  margin: 0 135px;
+  padding: 0;
+}
+
+.bar {
+  display: none;
+}
+
+.title, .title h2 {
+  display: block;
+  width: 447px;
+  height: 48px;
+  margin: auto;
+}
+
