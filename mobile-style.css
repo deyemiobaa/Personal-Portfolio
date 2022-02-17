@@ -235,8 +235,8 @@ header {
 
 .about-me-text {
   background-image:
-  url("assets/images/illustration-1-about-me-mobile.svg"),
-  url("assets/images/illustration-2-about-me-mobile.svg");
+    url("assets/images/illustration-1-about-me-mobile.svg"),
+    url("assets/images/illustration-2-about-me-mobile.svg");
   background-position: right top, left bottom;
   background-repeat: no-repeat, no-repeat;
   display: flex;

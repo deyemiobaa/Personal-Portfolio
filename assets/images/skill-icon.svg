@@ -1,0 +1,24 @@
+<svg width="369" height="144" viewBox="0 0 369 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_34_2479)">
+<circle cx="185" cy="64" r="40" fill="white"/>
+</g>
+<g clip-path="url(#clip0_34_2479)">
+<path d="M181.2 44H190.2C191.4 44 192.2 45.2 192 46.4L187.6 60.8H192.2C193.6 60.8 194.6 62.2 194 63.6L185 82C184.6 82.6 183.6 82.4 183.8 81.6L186 67.6H179C177.8 67.6 177 66.6 177.2 65.4L179.4 45.8C179.4 44.8 180.2 44 181.2 44Z" fill="#36B37E"/>
+<path d="M163.437 56.6706L166.644 54.8185C167.072 54.5716 167.608 54.8406 167.787 55.3153L169.222 61.4238L170.862 60.4772C171.361 60.1891 172.009 60.4892 172.088 61.1185L172.718 69.6189C172.701 69.9181 172.303 70.0516 172.207 69.7214L170.071 64.2101L167.576 65.6506C167.148 65.8975 166.654 65.7008 166.475 65.2261L163.171 57.6914C162.962 57.33 163.08 56.8764 163.437 56.6706Z" fill="#091E42"/>
+<path d="M207.626 56.6706L204.418 54.8185C203.99 54.5716 203.455 54.8406 203.276 55.3153L201.84 61.4238L200.2 60.4772C199.701 60.1891 199.053 60.4892 198.975 61.1185L198.344 69.6189C198.361 69.9181 198.76 70.0516 198.855 69.7214L200.992 64.2101L203.487 65.6506C203.914 65.8975 204.408 65.7008 204.587 65.2261L207.892 57.6914C208.1 57.33 207.982 56.8764 207.626 56.6706Z" fill="#091E42"/>
+</g>
+<defs>
+<filter id="filter0_d_34_2479" x="121" y="16" width="128" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="16"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.145573 0 0 0 0 0.185183 0 0 0 0 0.5375 0 0 0 0.08 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_34_2479"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_34_2479" result="shape"/>
+</filter>
+<clipPath id="clip0_34_2479">
+<rect width="48" height="48" fill="white" transform="translate(161 40)"/>
+</clipPath>
+</defs>
+</svg>
