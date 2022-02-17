@@ -17,7 +17,7 @@ a {
   margin: 0;
   padding: 0;
   font-style: normal;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 500;
   align-items: center;
   color: #28352f;
@@ -31,7 +31,7 @@ a {
 }
 
 .welcome {
-  padding-left: 10px 12px;
+  padding: 10px 12px;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -55,7 +55,7 @@ header {
 }
 
 .headline h1 {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -67,7 +67,7 @@ header {
 }
 
 .headline p {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -127,7 +127,7 @@ header {
 }
 
 .title h2 {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -135,7 +135,7 @@ header {
   height: 97px;
   text-align: center;
   color: #172b4d;
-  margin:0;
+  margin: 0;
 }
 
 .recent-works-cards {
@@ -169,8 +169,8 @@ header {
 }
 
 .work-details h3 {
-  margin: 12px 0 0 0 !important;
-  font-family: "Inter", sans-serif;
+  margin: 12px 0 0 !important;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -191,14 +191,14 @@ header {
 
 .language-tags li {
   list-style: none;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #3a4a42;
-  padding: 8px 8px;
+  padding: 8px;
   background: #ebeff4;
   border-radius: 4px;
 }
@@ -212,7 +212,7 @@ header {
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -222,7 +222,7 @@ header {
   color: #fff;
 }
 
-.works-button:hover { box-shadow: 0px 8px 16px rgba(30, 72, 143, 0.24); }
+.works-button:hover { box-shadow: 0 8px 16px rgb(30 72 143 / 24%); }
 
 .works-button:active { background: #0a2759; }
 
@@ -249,7 +249,7 @@ header {
 }
 
 .about-me-title {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -259,14 +259,14 @@ header {
 }
 
 .about-me-p {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   color: #42526e;
-  margin: 0 0 24px 0;
+  margin: 0 0 24px;
 }
 
 .about-me-button {
@@ -278,7 +278,7 @@ header {
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -288,7 +288,7 @@ header {
   color: #fff;
 }
 
-.about-me-button:hover { box-shadow: 0px 8px 16px rgba(30, 72, 143, 0.24); }
+.about-me-button:hover { box-shadow: 0 8px 16px rgb(30 72 143 / 24%); }
 
 .about-me-button:active { background: #0a2759; }
 
@@ -322,7 +322,7 @@ header {
 }
 
 .card-details p {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -346,7 +346,7 @@ header {
 
 .card-details li {
   list-style: none;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -371,7 +371,7 @@ header {
 }
 
 .form h2 {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -383,7 +383,7 @@ header {
   margin: 0;
 }
 
-form ul {
+.form-inputs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,7 +396,7 @@ form ul {
   list-style: none;
   margin-top: 24px;
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -420,7 +420,7 @@ input {
   border: 1px solid #1e488f;
   box-sizing: border-box;
   border-radius: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -431,13 +431,14 @@ input {
 .form .button {
   width: 129px;
 }
+
 .form button {
   padding: 12px;
   background: #1e488f;
   border-radius: 4px;
   text-align: center;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -446,7 +447,7 @@ input {
   color: #fff;
 }
 
-.form button:hover { box-shadow: 0px 8px 16px rgba(30, 72, 143, 0.24); }
+.form button:hover { box-shadow: 0 8px 16px rgb(30 72 143 / 24%); }
 
 .form button:active { background: #0a2759; }
 
@@ -455,6 +456,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
 .footer-socials {
   width: 170.17px;
   height: 20px;
@@ -479,9 +481,9 @@ footer {
   padding: 10px;
 }
 
-footer h4 {
+.footer-email {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;

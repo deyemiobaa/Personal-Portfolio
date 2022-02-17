@@ -1,5 +1,5 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   height: 3504.94px;
   margin: 0;
@@ -9,7 +9,7 @@ body {
 
 header {
   height: 636px;
-  background: url('assets/images/Header-llustration-desktop.svg');
+  background: url("assets/images/Header-llustration-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 0 left 27px;
@@ -17,14 +17,14 @@ header {
 }
 
 .wrapper {
-  background: 
+  background:
     url("assets/images/right-about-me.svg"),
     url("assets/images/left-about-me.svg"),
     url("assets/images/illustration-1-contact-form-desktop.svg"),
     url("assets/images/illustration-2-contact-form-desktop.svg"),
     url("assets/images/illustratoin-3-contact-form-desktop.svg");
   background-repeat: no-repeat;
-  background-position: 
+  background-position:
     top 1900px right 0,
     top 2150px left -50px,
     bottom 72.49px left 0,
@@ -66,7 +66,7 @@ header {
 
 .headline p {
   height: 96px;
-  margin: 24px 0 0 0;
+  margin: 24px 0 0;
 }
 
 .socials { margin-top: 24px; }
@@ -74,7 +74,6 @@ header {
 .arrow {
   display: flex;
   height: 114px;
-  margin-top: 0;
   justify-content: center;
   align-items: flex-end;
   margin-top: 24px;
@@ -91,7 +90,8 @@ header {
   padding: 80px 0;
 }
 
-.title, .title h2 {
+.title,
+.title h2 {
   display: block;
   width: 447px;
   height: 48px;
@@ -101,7 +101,7 @@ header {
 .recent-works-cards {
   height: 988px;
   width: 100%;
-  margin: 52px auto 0 auto;
+  margin: 52px auto 0;
   display: grid;
   grid-template-columns: auto auto auto;
   row-gap: 32px;
@@ -131,7 +131,7 @@ header {
 
 .about-me {
   width: 90%;
-  margin: 112px auto 0 auto;
+  margin: 112px auto 0;
   padding: 80px 0;
   height: 648px;
   justify-content: space-between;
@@ -139,7 +139,7 @@ header {
 
 .about-me-text {
   width: 65%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   background: none;
   height: 240px;
   justify-content: space-between;
@@ -198,7 +198,7 @@ header {
 }
 
 .card-details ul {
-  margin: 24px 0 0 0;
+  margin: 24px 0 0;
 }
 
 .card-tags {
@@ -206,7 +206,7 @@ header {
 }
 
 .form {
-  margin: auto auto 142px auto;
+  margin: auto auto 142px;
   width: 90%;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -230,7 +230,7 @@ form {
   height: 330px;
 }
 
-form ul {
+.form-inputs {
   display: block;
 }
 
@@ -249,6 +249,4 @@ footer {
   border-top: 1px solid #dfe1e6;
 }
 
-footer h4 {
-  display: none;
-}
+.footer-email { display: none; }
