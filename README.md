@@ -9,9 +9,9 @@
 - Frameworks: N/A
 - Technologies used: N/A
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://deyemiobaa.github.io/Personal-Portfolio/)
 
 
 ## Getting Started
