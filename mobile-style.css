@@ -540,7 +540,12 @@ footer {
   .wrapper {
     background: url("assets/images/right-about-me.svg"), url("assets/images/left-about-me.svg"), url("assets/images/illustration-1-contact-form-desktop.svg"), url("assets/images/illustration-2-contact-form-desktop.svg"), url("assets/images/illustratoin-3-contact-form-desktop.svg");
     background-repeat: no-repeat;
-    background-position: top 1900px right 0, top 2150px left -50px, bottom 72.49px left 0, bottom 156.14px left 274px, bottom 74.83px right 0;
+    background-position:
+      top 1900px right 0,
+      top 2150px left -50px,
+      bottom 72.49px left 0,
+      bottom 156.14px left 274px,
+      bottom 74.83px right 0;
   }
 
   .navigation {
@@ -568,6 +573,7 @@ footer {
   }
 
   .headline {
+    background: none;
     display: flex;
     width: 60%;
     margin: auto;
@@ -576,8 +582,22 @@ footer {
   }
 
   .headline h1 {
+    overflow: hidden;
     height: 114px;
     font-weight: 800;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3s steps(200, end);
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
   }
 
   .headline p {
