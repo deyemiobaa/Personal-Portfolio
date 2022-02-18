@@ -208,7 +208,7 @@ a {
   padding: 12px;
   width: 100px;
   height: 24px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background: #1e488f;
   border-radius: 4px;
   text-align: center;
@@ -223,6 +223,7 @@ a {
   color: #fff;
   transition: background-color 500ms ease-in;
   transition: border-radius 500ms ease-out;
+  justify-content: center;
 }
 
 .works-button:hover {
@@ -298,6 +299,7 @@ a {
   color: #fff;
   transition: background-color 500ms ease-in;
   transition: border-radius 500ms ease-out;
+  justify-content: center;
 }
 
 .about-me-button:hover {
