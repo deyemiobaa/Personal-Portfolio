@@ -7,6 +7,14 @@ body {
 
 .desktop-nav {
   display: none;
+  transition: font-size 5s easeInOutBounce 1s;
+}
+
+.desktop-nav li:hover {
+  font-size: 25px;
+  background-color: #0a2759;
+  color: #fff;
+  border-radius: 10px;
 }
 
 a {
@@ -243,7 +251,8 @@ a {
 }
 
 .about-me-text {
-  background-image: url("assets/images/illustration-1-about-me-mobile.svg"), url("assets/images/illustration-2-about-me-mobile.svg");
+  background-image: url("assets/images/illustration-1-about-me-mobile.svg"),
+    url("assets/images/illustration-2-about-me-mobile.svg");
   background-position: right top, left bottom;
   background-repeat: no-repeat, no-repeat;
   display: flex;
@@ -534,14 +543,14 @@ footer {
     padding: 0;
   }
   .wrapper {
-    background: url("assets/images/right-about-me.svg"), url("assets/images/left-about-me.svg"), url("assets/images/illustration-1-contact-form-desktop.svg"), url("assets/images/illustration-2-contact-form-desktop.svg"), url("assets/images/illustratoin-3-contact-form-desktop.svg");
+    background: url("assets/images/right-about-me.svg"),
+      url("assets/images/left-about-me.svg"),
+      url("assets/images/illustration-1-contact-form-desktop.svg"),
+      url("assets/images/illustration-2-contact-form-desktop.svg"),
+      url("assets/images/illustratoin-3-contact-form-desktop.svg");
     background-repeat: no-repeat;
-    background-position:
-      top 1900px right 0,
-      top 2150px left -50px,
-      bottom 72.49px left 0,
-      bottom 156.14px left 274px,
-      bottom 74.83px right 0;
+    background-position: top 1900px right 0, top 2150px left -50px,
+      bottom 72.49px left 0, bottom 156.14px left 274px, bottom 74.83px right 0;
   }
   .navigation {
     display: flex;
