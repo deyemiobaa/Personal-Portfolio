@@ -6,7 +6,9 @@ body {
   margin: auto;
 }
 
-.desktop-nav { display: none; }
+.desktop-nav {
+  display: none;
+}
 
 a {
   color: inherit;
@@ -219,11 +221,20 @@ a {
   align-items: center;
   letter-spacing: 0.03em;
   color: #fff;
+  transition: background-color 500ms ease-in;
+  transition: border-radius 500ms ease-out;
 }
 
-.works-button:hover { box-shadow: 0 8px 16px rgb(30 72 143 / 24%); }
+.works-button:hover {
+  box-shadow: 0 8px 16px rgb(30 72 143 / 24%);
+  text-align: center;
+  background-color: #36b37e;
+  border-radius: 20px;
+}
 
-.works-button:active { background: #0a2759; }
+.works-button:active {
+  background: #0a2759;
+}
 
 .about-me {
   display: flex;
@@ -233,9 +244,7 @@ a {
 }
 
 .about-me-text {
-  background-image:
-    url("assets/images/illustration-1-about-me-mobile.svg"),
-    url("assets/images/illustration-2-about-me-mobile.svg");
+  background-image: url("assets/images/illustration-1-about-me-mobile.svg"), url("assets/images/illustration-2-about-me-mobile.svg");
   background-position: right top, left bottom;
   background-repeat: no-repeat, no-repeat;
   display: flex;
@@ -285,11 +294,19 @@ a {
   align-items: center;
   letter-spacing: 0.03em;
   color: #fff;
+  transition: background-color 500ms ease-in;
+  transition: border-radius 500ms ease-out;
 }
 
-.about-me-button:hover { box-shadow: 0 8px 16px rgb(30 72 143 / 24%); }
+.about-me-button:hover {
+  box-shadow: 0 8px 16px rgb(30 72 143 / 24%);
+  background-color: #36b37e;
+  border-radius: 20px;
+}
 
-.about-me-button:active { background: #0a2759; }
+.about-me-button:active {
+  background: #0a2759;
+}
 
 .about-me-card {
   padding: 1px;
@@ -444,11 +461,19 @@ input {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
+  transition: background-color 500ms ease-in;
+  transition: border-radius 500ms ease-out;
 }
 
-.form button:hover { box-shadow: 0 8px 16px rgb(30 72 143 / 24%); }
+.form button:hover {
+  box-shadow: 0 8px 16px rgb(30 72 143 / 24%);
+  background-color: #36b37e;
+  border-radius: 20px;
+}
 
-.form button:active { background: #0a2759; }
+.form button:active {
+  background: #0a2759;
+}
 
 footer {
   display: flex;
@@ -499,7 +524,9 @@ footer {
     margin: 0;
   }
 
-  .mobile-nav { display: none; }
+  .mobile-nav {
+    display: none;
+  }
 
   header {
     height: 636px;
@@ -511,19 +538,9 @@ footer {
   }
 
   .wrapper {
-    background:
-      url("assets/images/right-about-me.svg"),
-      url("assets/images/left-about-me.svg"),
-      url("assets/images/illustration-1-contact-form-desktop.svg"),
-      url("assets/images/illustration-2-contact-form-desktop.svg"),
-      url("assets/images/illustratoin-3-contact-form-desktop.svg");
+    background: url("assets/images/right-about-me.svg"), url("assets/images/left-about-me.svg"), url("assets/images/illustration-1-contact-form-desktop.svg"), url("assets/images/illustration-2-contact-form-desktop.svg"), url("assets/images/illustratoin-3-contact-form-desktop.svg");
     background-repeat: no-repeat;
-    background-position:
-      top 1900px right 0,
-      top 2150px left -50px,
-      bottom 72.49px left 0,
-      bottom 156.14px left 274px,
-      bottom 74.83px right 0;
+    background-position: top 1900px right 0, top 2150px left -50px, bottom 72.49px left 0, bottom 156.14px left 274px, bottom 74.83px right 0;
   }
 
   .navigation {
@@ -546,7 +563,9 @@ footer {
     color: #344563;
   }
 
-  .desktop-nav li { padding: 10px 12px; }
+  .desktop-nav li {
+    padding: 10px 12px;
+  }
 
   .headline {
     display: flex;
@@ -566,7 +585,9 @@ footer {
     margin: 24px 0 0;
   }
 
-  .socials { margin-top: 24px; }
+  .socials {
+    margin-top: 24px;
+  }
 
   .arrow {
     display: flex;
@@ -576,7 +597,9 @@ footer {
     margin-top: 24px;
   }
 
-  .bar { display: none; }
+  .bar {
+    display: none;
+  }
 
   .recent-works {
     height: 1084px;
@@ -746,5 +769,7 @@ footer {
     border-top: 1px solid #dfe1e6;
   }
 
-  .footer-email { display: none; }
+  .footer-email {
+    display: none;
+  }
 }
