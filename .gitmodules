@@ -1,0 +1,3 @@
+[submodule "animations"] 
+  path = animations
+  url = https://github.com/deyemiobaa/Personal-Portfolio.git
