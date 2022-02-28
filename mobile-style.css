@@ -7,34 +7,45 @@ body {
 }
 
 .desktop-nav {
+  display: none;
+}
+
+.overlay {
   background-color: #fff;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
   width: 100%;
+  mix-blend-mode: normal;
   list-style: none;
   padding: 15px 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow:48px 0 50px #fff;
 }
 
-.desktop-nav .close-btn {
+.overlay .close-btn {
   align-self: flex-end;
-  font-size: 20px;
+  font-size: 25px;
   padding: 0 20px;
+  margin: 0 30px 30px 0;
 }
 
-.desktop-nav li {
+.overlay li {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #3A4A42;
+  color: #3a4a42;
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
   line-height: 44px;
 }
-
 
 a {
   color: inherit;
@@ -555,11 +566,7 @@ footer {
     margin: 0;
   }
   
-  .close-btn {
-    display: none;
-  }
-  
-  .mobile-nav {
+  .close-btn, .overlay, .mobile-nav {
     display: none;
   }
   
