@@ -12,7 +12,7 @@ body {
 
 .overlay {
   background-color: #fff;
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 100vh;
   position: fixed;
@@ -28,6 +28,7 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow:48px 0 50px #fff;
+
 }
 
 .overlay .close-btn {
