@@ -7,11 +7,38 @@ body {
 }
 
 .desktop-nav {
-  display: none;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  list-style: none;
+  padding: 15px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
+
+.desktop-nav .close-btn {
+  align-self: flex-end;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.desktop-nav li {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #3A4A42;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .mobile-nav {
@@ -208,7 +235,7 @@ a {
   padding: 12px;
   width: 100px;
   height: 24px;
-
+  
   /* margin-bottom: 20px; */
   background: #1e488f;
   border-radius: 4px;
@@ -527,11 +554,15 @@ footer {
     height: 3650px;
     margin: 0;
   }
-
+  
+  .close-btn {
+    display: none;
+  }
+  
   .mobile-nav {
     display: none;
   }
-
+  
   header {
     height: 900px;
     background: url("assets/images/Header-llustration-desktop.svg");
@@ -540,27 +571,27 @@ footer {
     /* background-position: top 0 left 27px; */
     padding: 20px 0 0;
   }
-
+  
   .wrapper {
     background:
-      url("assets/images/right-about-me.svg"),
-      url("assets/images/left-about-me.svg"),
-      url("assets/images/illustration-1-contact-form-desktop.svg"),
-      url("assets/images/illustration-2-contact-form-desktop.svg"),
-      url("assets/images/illustratoin-3-contact-form-desktop.svg");
+    url("assets/images/right-about-me.svg"),
+    url("assets/images/left-about-me.svg"),
+    url("assets/images/illustration-1-contact-form-desktop.svg"),
+    url("assets/images/illustration-2-contact-form-desktop.svg"),
+    url("assets/images/illustratoin-3-contact-form-desktop.svg");
     background-repeat: no-repeat;
     background-position: top 2200px right 0,
-      top 2390px left -50px,
-      bottom 72.49px left 0,
-      bottom 120px left 274px,
-      bottom 60px right 0;
+    top 2390px left -50px,
+    bottom 72.49px left 0,
+    bottom 120px left 274px,
+    bottom 60px right 0;
   }
-
+  
   .navigation {
     display: flex;
     justify-content: center;
   }
-
+  
   .desktop-nav {
     list-style: none;
     display: flex;
@@ -576,23 +607,23 @@ footer {
     align-items: center;
     color: #344563;
   }
-
+  
   .desktop-nav li {
     padding-bottom: 5px;
     font-size: 18px;
     letter-spacing: 1px;
     transition: font-size 1s ease-out;
   }
-
+  
   .desktop-nav li:hover {
     font-size: 25px;
     border-bottom: 2px solid #36b37f;
   }
-
+  
   a {
     text-decoration: none;
   }
-
+  
   .headline {
     background: none;
     display: flex;
@@ -601,7 +632,7 @@ footer {
     padding: 160px 0;
     height: 436px;
   }
-
+  
   .headline h1 {
     overflow: hidden;
     height: 114px;
@@ -610,26 +641,26 @@ footer {
     margin: 0 auto;
     animation: typing 3s steps(200, end);
   }
-
+  
   @keyframes typing {
     from {
       width: 0;
     }
-
+    
     to {
       width: 100%;
     }
   }
-
+  
   .headline p {
     height: 96px;
     margin: 24px 0 0;
   }
-
+  
   .socials {
     margin-top: 24px;
   }
-
+  
   .arrow {
     display: flex;
     height: 114px;
@@ -637,11 +668,11 @@ footer {
     align-items: flex-end;
     margin-top: 24px;
   }
-
+  
   .bar {
     display: none;
   }
-
+  
   .recent-works {
     height: 1084px;
     width: 90%;
@@ -650,7 +681,7 @@ footer {
     margin: auto;
     padding: 80px 0;
   }
-
+  
   .title,
   .title h2 {
     display: block;
@@ -658,7 +689,7 @@ footer {
     height: 48px;
     margin: auto;
   }
-
+  
   .recent-works-cards {
     height: 988px;
     width: 100%;
@@ -668,28 +699,28 @@ footer {
     row-gap: 32px;
     column-gap: 24px;
   }
-
+  
   .work-details {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-
+  
   .work-details h3 {
     padding: 0;
     margin: 0 !important;
     height: 57px;
   }
-
+  
   .work-details a {
     margin: 0;
   }
-
+  
   .language-tags {
     height: 32px;
     margin: 0;
   }
-
+  
   .about-me {
     width: 90%;
     margin: 112px auto 0;
@@ -697,7 +728,7 @@ footer {
     height: 700px;
     justify-content: space-between;
   }
-
+  
   .about-me-text {
     width: 70%;
     margin: 0 auto;
@@ -705,16 +736,16 @@ footer {
     height: 300px;
     justify-content: space-between;
   }
-
+  
   .about-me-text h4 {
     margin: 0;
   }
-
+  
   .about-me-text p {
     height: 96px;
     margin: 0;
   }
-
+  
   .about-me-card {
     height: 352px;
     padding: 4px 8px;
@@ -722,50 +753,50 @@ footer {
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
   }
-
+  
   .card {
     margin: 0;
     display: grid;
     grid-template-rows: 128px 144px;
     justify-content: space-evenly;
   }
-
+  
   .card-img img {
     display: none;
   }
-
+  
   .lang {
     background: url("assets/images/lang-icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .framework {
     background: url("assets/images/framework-icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .skills {
     background: url("assets/images/skills-icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .card-details {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  
   .card-details ul {
     margin: 24px 0 0;
   }
-
+  
   .card-tags {
     margin: 24px 0;
   }
-
+  
   .form {
     margin: auto auto 142px;
     width: 90%;
@@ -777,7 +808,7 @@ footer {
     background: none;
     align-items: center;
   }
-
+  
   .form h3 {
     height: 256px;
     font-size: 26px;
@@ -786,23 +817,23 @@ footer {
     display: flex;
     align-items: center;
   }
-
+  
   form {
     height: 330px;
   }
-
+  
   .form-inputs {
     display: block;
   }
-
+  
   input {
     width: 85%;
   }
-
+  
   .form textarea {
     width: 85%;
   }
-
+  
   footer {
     height: 60px;
     display: flex;
@@ -810,7 +841,7 @@ footer {
     border-top: 1px solid #dfe1e6;
     border-bottom: 1px solid #dfe1e6;
   }
-
+  
   .footer-email {
     display: none;
   }
