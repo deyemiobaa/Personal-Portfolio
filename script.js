@@ -1,11 +1,23 @@
-let mobileNav = document.querySelector(".overlay");
-let closeBtn = document.querySelector(".close-btn");
-let hamburger = document.querySelector(".menu-icon");
+const mobileNav = document.querySelector('#mobile-menu-navigation');
+const mobileNavMenu = document.querySelector('.overlay-content');
+const closeBtn = document.querySelector('.close-btn');
+const hamburger = document.querySelector('.menu-icon');
 
-hamburger.addEventListener("click", () => {
-  mobileNav.style.display = "flex";
+hamburger.addEventListener('click', () => {
+  mobileNavMenu.style.display = 'block';
+  mobileNav.style.width = '100%';
 });
 
-closeBtn.addEventListener("click", () => {
-  mobileNav.style.display = "none";
+closeBtn.addEventListener('click', () => {
+  mobileNavMenu.style.display = 'none';
+  mobileNav.style.width = '0%';
 });
+
+const linkIds = Array.from(document.querySelectorAll('.page-link'));
+
+linkIds.forEach(
+  (linkId) => linkId.addEventListener('click', () => {
+    mobileNavMenu.style.display = 'none';
+    mobileNav.style.width = '0%';
+  }),
+);
