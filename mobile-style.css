@@ -480,6 +480,7 @@ input {
 
 footer {
   display: flex;
+  /* margin-top: 10px; */
   flex-direction: column;
   align-items: center;
 }
@@ -523,7 +524,7 @@ footer {
   body {
     font-family: Inter, sans-serif;
     font-style: normal;
-    height: 3524.94px;
+    height: 3650px;
     margin: 0;
   }
 
@@ -532,11 +533,11 @@ footer {
   }
 
   header {
-    height: 636px;
+    height: 900px;
     background: url("assets/images/Header-llustration-desktop.svg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: top 0 left 27px;
+    /* background-position: top 0 left 27px; */
     padding: 20px 0 0;
   }
 
@@ -548,12 +549,11 @@ footer {
       url("assets/images/illustration-2-contact-form-desktop.svg"),
       url("assets/images/illustratoin-3-contact-form-desktop.svg");
     background-repeat: no-repeat;
-    background-position:
-      top 1900px right 0,
-      top 2150px left -50px,
+    background-position: top 2200px right 0,
+      top 2390px left -50px,
       bottom 72.49px left 0,
-      bottom 156.14px left 274px,
-      bottom 74.83px right 0;
+      bottom 120px left 274px,
+      bottom 60px right 0;
   }
 
   .navigation {
@@ -578,8 +578,8 @@ footer {
   }
 
   .desktop-nav li {
-    padding: 10px 12px;
-    font-size: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;
     letter-spacing: 1px;
     transition: font-size 1s ease-out;
   }
@@ -669,14 +669,6 @@ footer {
     column-gap: 24px;
   }
 
-  .works {
-    transition: transform 1s ease-in-out;
-  }
-
-  .works:hover {
-    transform: scale(1.2);
-  }
-
   .work-details {
     display: flex;
     flex-direction: column;
@@ -701,8 +693,8 @@ footer {
   .about-me {
     width: 90%;
     margin: 112px auto 0;
-    padding: 80px 0;
-    height: 648px;
+    padding: 0;
+    height: 700px;
     justify-content: space-between;
   }
 
@@ -710,7 +702,7 @@ footer {
     width: 70%;
     margin: 0 auto;
     background: none;
-    height: 240px;
+    height: 300px;
     justify-content: space-between;
   }
 
@@ -786,11 +778,11 @@ footer {
     align-items: center;
   }
 
-  .form h2 {
+  .form h3 {
     height: 256px;
-    font-size: 30px;
-    line-height: normal;
-    text-align: start;
+    font-size: 26px;
+    line-height: 45px;
+    text-align: left;
     display: flex;
     align-items: center;
   }
@@ -812,10 +804,11 @@ footer {
   }
 
   footer {
-    height: 72px;
+    height: 60px;
     display: flex;
     justify-content: center;
     border-top: 1px solid #dfe1e6;
+    border-bottom: 1px solid #dfe1e6;
   }
 
   .footer-email {
