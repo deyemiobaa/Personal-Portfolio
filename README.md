@@ -5,7 +5,7 @@
 
 ## Built With
 
-- Major languages: HTML, CSS
+- Major languages: HTML, CSS, JavaScript
 - Frameworks: N/A
 - Technologies used: N/A
 
@@ -26,6 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 - A code editor of your choice
 - A browser
+- Node.js (to run javascript files locally)
 
 
 

@@ -10,8 +10,52 @@ body {
   display: none;
 }
 
+.overlay {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 90vh;
+  width: 0;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 1;
+  margin: 0;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 60px 60px;
+  box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
+  transition: 1s;
+}
+
+.overlay-content {
+  display: none;
+  padding: 15px 20px;
+  width: 30%;
+  list-style: none;
+  margin: 30px 0;
+  align-self: flex-start;
+}
+
+.overlay .close-btn {
+  font-size: 25px;
+  padding: 0 20px;
+  margin: 30px 10px 30px 0;
+}
+
+.overlay li {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #3a4a42;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .mobile-nav {
@@ -25,7 +69,6 @@ a {
   font-weight: 500;
   align-items: center;
   color: #28352f;
-  margin-top: 44px;
 }
 
 .menu-icon {
@@ -389,7 +432,7 @@ a {
   padding: 64px 24px;
 }
 
-.form h2 {
+.form h3 {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -480,6 +523,7 @@ input {
 
 footer {
   display: flex;
+
   /* margin-top: 10px; */
   flex-direction: column;
   align-items: center;
@@ -528,6 +572,8 @@ footer {
     margin: 0;
   }
 
+  .close-btn,
+  .overlay,
   .mobile-nav {
     display: none;
   }
@@ -535,9 +581,8 @@ footer {
   header {
     height: 900px;
     background: url("assets/images/Header-llustration-desktop.svg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: top 0 left 27px; */
     padding: 20px 0 0;
   }
 
@@ -549,7 +594,8 @@ footer {
       url("assets/images/illustration-2-contact-form-desktop.svg"),
       url("assets/images/illustratoin-3-contact-form-desktop.svg");
     background-repeat: no-repeat;
-    background-position: top 2200px right 0,
+    background-position:
+      top 2200px right 0,
       top 2390px left -50px,
       bottom 72.49px left 0,
       bottom 120px left 274px,
@@ -579,7 +625,7 @@ footer {
 
   .desktop-nav li {
     padding-bottom: 5px;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 1px;
     transition: font-size 1s ease-out;
   }
