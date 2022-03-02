@@ -1,7 +1,9 @@
+// Mobile menu overlay
 const mobileNav = document.querySelector('#mobile-menu-navigation');
 const mobileNavMenu = document.querySelector('.overlay-content');
 const closeBtn = document.querySelector('.close-btn');
 const hamburger = document.querySelector('.menu-icon');
+const linkIds = Array.from(document.querySelectorAll('.page-link'));
 
 hamburger.addEventListener('click', () => {
   mobileNavMenu.style.display = 'block';
@@ -13,11 +15,10 @@ closeBtn.addEventListener('click', () => {
   mobileNav.style.width = '0%';
 });
 
-const linkIds = Array.from(document.querySelectorAll('.page-link'));
-
 linkIds.forEach(
   (linkId) => linkId.addEventListener('click', () => {
     mobileNavMenu.style.display = 'none';
     mobileNav.style.width = '0%';
   }),
 );
+// End of mobile menu overlay
