@@ -25,73 +25,72 @@ linkIds.forEach(
 // End of mobile menu overlay
 
 // Project popup window
-const docBody = document.querySelector(".project-popup-window");
-const projectButtons = Array.from(document.querySelectorAll(".works"));
-const popupContainer = document.querySelector("project-popup-window");
-const wrapper = document.getElementById("wrapper");
-const body = document.getElementById("page-body");
+const docBody = document.querySelector('.project-popup-window');
+const projectButtons = Array.from(document.querySelectorAll('.works'));
+const wrapper = document.getElementById('wrapper');
+const body = document.getElementById('page-body');
 const projects = [
   {
-    name: "Keeping track of hundreds of components",
-    image: "assets/images/Snapshoot-Portfolio.svg",
+    name: 'Keeping track of hundreds of components',
+    image: 'assets/images/Snapshoot-Portfolio.svg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    live: "https://deyemiobaa.github.io/Personal-Portfolio/",
-    source: "https://github.com/deyemiobaa/Personal-Portfolio/",
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
   },
   {
-    name: "Keeping track of hundreds of components",
-    image: "assets/images/Snapshoot-Portfolio.svg",
+    name: 'Keeping track of hundreds of components',
+    image: 'assets/images/Snapshoot-Portfolio.svg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    live: "https://deyemiobaa.github.io/Personal-Portfolio/",
-    source: "https://github.com/deyemiobaa/Personal-Portfolio/",
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
   },
   {
-    name: "Keeping track of hundreds of components",
-    image: "assets/images/Snapshoot-Portfolio.svg",
+    name: 'Keeping track of hundreds of components',
+    image: 'assets/images/Snapshoot-Portfolio.svg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    live: "https://deyemiobaa.github.io/Personal-Portfolio/",
-    source: "https://github.com/deyemiobaa/Personal-Portfolio/",
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
   },
   {
-    name: "Keeping track of hundreds of components",
-    image: "assets/images/Snapshoot-Portfolio.svg",
+    name: 'Keeping track of hundreds of components',
+    image: 'assets/images/Snapshoot-Portfolio.svg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    live: "https://deyemiobaa.github.io/Personal-Portfolio/",
-    source: "https://github.com/deyemiobaa/Personal-Portfolio/",
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
   },
   {
-    name: "Keeping track of hundreds of components",
-    image: "assets/images/Snapshoot-Portfolio.svg",
+    name: 'Keeping track of hundreds of components',
+    image: 'assets/images/Snapshoot-Portfolio.svg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    live: "https://deyemiobaa.github.io/Personal-Portfolio/",
-    source: "https://github.com/deyemiobaa/Personal-Portfolio/",
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
   },
   {
-    name: "Keeping track of hundreds of components",
-    image: "assets/images/Snapshoot-Portfolio.svg",
+    name: 'Keeping track of hundreds of components',
+    image: 'assets/images/Snapshoot-Portfolio.svg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    technologies: ["Ruby on Rails", "CSS", "JavaScript", "HTML"],
-    live: "https://deyemiobaa.github.io/Personal-Portfolio/",
-    source: "https://github.com/deyemiobaa/Personal-Portfolio/",
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
   },
 ];
 
 // Create all project pop-up and store them in an array
-let projectContent = []
+const projectContent = [];
 
-const createProjectContent = projectArray => {
-  for (let project = 0; project < projectArray.length; project++) {
+const createProjectContent = (projectArray) => {
+  for (let project = 0; project < projectArray.length; project += 1) {
     projectContent.push(
       `<div class="pop-up-overlay">
          <span class="close" onclick="closeNav()"><img src="assets/images/Disabled.svg" alt=""></span>
@@ -112,27 +111,28 @@ const createProjectContent = projectArray => {
            <p>${projectArray[project].description}</p>
          </div>
     </div>
-      `
-    )
+      `,
+    );
   }
-}
-createProjectContent(projects)
+};
+createProjectContent(projects);
 
 // Loop through eah button and match it to its content
 // Populate the HTML file with the content
-for (let button = 0; button < projectButtons.length; button++) {
-  for (let content = 0; content < projectContent.length; content++) {
+for (let button = 0; button < projectButtons.length; button += 1) {
+  for (let content = 0; content < projectContent.length; content += 1) {
     projectButtons[button].addEventListener('click', () => {
-      docBody.innerHTML = projectContent[content]
-      wrapper.classList.add('blur')
-      body.classList.add('color')
+      docBody.innerHTML = projectContent[content];
+      wrapper.classList.add('blur');
+      body.classList.add('color');
     });
   }
 }
 
 // when triggered overwrite the HTML content and make it empty
 function closeNav() {
-  docBody.innerHTML = ''
-  wrapper.classList.remove('blur')
-  body.classList.remove('color')
+  docBody.innerHTML = '';
+  wrapper.classList.remove('blur');
+  body.classList.remove('color');
 }
+closeNav();
