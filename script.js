@@ -5,6 +5,12 @@ const closeBtn = document.querySelector('.close-btn');
 const hamburger = document.querySelector('.menu-icon');
 const linkIds = Array.from(document.querySelectorAll('.page-link'));
 
+const docBody = document.querySelector(".project-popup-window");
+const projectButtons = Array.from(document.querySelectorAll(".works"));
+const popupContainer = document.querySelector("project-popup-window");
+const wrapper = document.getElementById("wrapper");
+const body = document.getElementById("page-body");
+
 hamburger.addEventListener('click', () => {
   mobileNavMenu.style.display = 'block';
   mobileNav.style.width = '100%';
