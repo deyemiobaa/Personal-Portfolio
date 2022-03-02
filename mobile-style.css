@@ -188,8 +188,6 @@ font-size: 40px;
   
 line-height: 52px;
   
-/* height: 97px; */
-  
 text-align: center;
   
 color: #172b4d;
@@ -572,6 +570,17 @@ footer {
 }
 
 /* popup for project cards mobile*/
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.color {
+  background: #797e86;
+}
 
 .lang-tags, .button-items { 
   display: flex;
@@ -967,4 +976,35 @@ footer {
   }
   
   /* Popup for project cards desktop*/
+   .pop-up-overlay {
+    top: 5%;
+    padding: 70px 20px 40px 20px;
+    border-radius: 8px;
+    height: 500px;
+  }
+  
+  .close {
+    right: 0;
+    margin-right: 20px;
+  }
+  
+  .pop-up-overlay-content {
+    display: block;
+  }
+  
+  .buttons-container {
+    float: right;
+    width: 40%;
+  }
+  
+  .pop-up-overlay-content h2 {
+    width: 65%;
+    margin-top: 10px;
+  }
+  
+  .button-items {
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 0;
+  }
 }
