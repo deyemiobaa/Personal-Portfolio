@@ -118,3 +118,21 @@ const createProjectContent = projectArray => {
 }
 createProjectContent(projects)
 
+// Loop through eah button and match it to its content
+// Populate the HTML file with the content
+for (let button = 0; button < projectButtons.length; button++) {
+  for (let content = 0; content < projectContent.length; content++) {
+    projectButtons[button].addEventListener('click', () => {
+      docBody.innerHTML = projectContent[content]
+      wrapper.classList.add('blur')
+      body.classList.add('color')
+    });
+  }
+}
+
+// when triggered overwrite the HTML content and make it empty
+function closeNav() {
+  docBody.innerHTML = ''
+  wrapper.classList.remove('blur')
+  body.classList.remove('color')
+}
