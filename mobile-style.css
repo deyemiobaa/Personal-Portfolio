@@ -573,6 +573,103 @@ footer {
 
 /* popup for project cards mobile*/
 
+.lang-tags, .button-items { 
+  display: flex;
+}
+
+.pop-up-overlay {
+  left: 0;
+  overflow: auto !important;
+  display: block;
+  right: 0;
+  height: 90vh;
+  width: 80%;
+  top: 2%;
+  margin: auto;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.pop-up-overlay::-webkit-scrollbar {width: 0 !important;}
+
+.close {
+  position: absolute;
+  right: 7%;
+  top: 3%;
+}
+
+.pop-up-overlay-image {
+  width: 100%;
+}
+
+.pop-up-overlay-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-up-overlay-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.pop-up-overlay-content h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.pop-up-overlay-content p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: #344563;
+}
+
+.lang-tags {
+  list-style: none;
+  padding: 0;
+  gap: 7px;
+}
+
+.lang-tags li{
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  padding: 8px;
+  background: #ebeff4;
+  border-radius: 4px;
+}
+
+.buttons-container {
+  order: 1;
+}
+
+.button-items {
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.button-items li {
+  font-size: 17px;
+  line-height: 24px;
+  padding: 10px 20px;
+  background: #36b37f;
+  border-radius: 4px;
+}
+
+
 
 @media screen and (min-width: 992px) {
   body {
