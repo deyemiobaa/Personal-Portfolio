@@ -5,6 +5,26 @@ const closeBtn = document.querySelector('.close-btn');
 const hamburger = document.querySelector('.menu-icon');
 const linkIds = Array.from(document.querySelectorAll('.page-link'));
 
+hamburger.addEventListener('click', () => {
+  mobileNavMenu.style.display = 'block';
+  mobileNav.style.width = '100%';
+});
+
+closeBtn.addEventListener('click', () => {
+  mobileNavMenu.style.display = 'none';
+  mobileNav.style.width = '0%';
+});
+
+linkIds.forEach(
+  (linkId) => linkId.addEventListener('click', () => {
+    mobileNavMenu.style.display = 'none';
+    mobileNav.style.width = '0%';
+  }),
+);
+
+// End of mobile menu overlay
+
+// Project popup window
 const docBody = document.querySelector(".project-popup-window");
 const projectButtons = Array.from(document.querySelectorAll(".works"));
 const popupContainer = document.querySelector("project-popup-window");
@@ -67,20 +87,34 @@ const projects = [
   },
 ];
 
-hamburger.addEventListener('click', () => {
-  mobileNavMenu.style.display = 'block';
-  mobileNav.style.width = '100%';
-});
+// Create all project pop-up and store them in an array
+let projectContent = []
 
-closeBtn.addEventListener('click', () => {
-  mobileNavMenu.style.display = 'none';
-  mobileNav.style.width = '0%';
-});
+const createProjectContent = projectArray => {
+  for (let project = 0; project < projectArray.length; project++) {
+    projectContent.push(
+      `<div class="pop-up-overlay">
+         <span class="close" onclick="closeNav()"><img src="assets/images/Disabled.svg" alt=""></span>
+         <div class="pop-up-overlay-image">
+           <img class="pop-up-overlay-image" src="${projectArray[project].image}" alt="">
+         </div>
+         <div class="pop-up-overlay-content">
+           <div class="buttons-container">
+             <ul class="button-items">
+               <li><a href="${projectArray[project].live}">See Live <i class="fa-solid fa-arrow-up-right-from-square"></i></i></a></li>
+               <li><a href="${projectArray[project].source}">See Source <i class="fa-brands fa-github"></i></a></li>
+             </ul>
+           </div>
+           <h2>${projectArray[project].name}</h2>
+           <ul class="lang-tags">
+             ${projectArray[project].technologies.map((tech) => (`<li class="tag">${tech}</li>`)).join('')}
+           </ul>
+           <p>${projectArray[project].description}</p>
+         </div>
+    </div>
+      `
+    )
+  }
+}
+createProjectContent(projects)
 
-linkIds.forEach(
-  (linkId) => linkId.addEventListener('click', () => {
-    mobileNavMenu.style.display = 'none';
-    mobileNav.style.width = '0%';
-  }),
-);
-// End of mobile menu overlay
