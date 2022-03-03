@@ -489,6 +489,32 @@ input {
 }
 
 /* error message for form validation */
+.error {
+  visibility: hidden;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 12px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: #c1c7d0;
+  color: #0a2759;
+  text-align: center;
+  bottom: 125%;
+  left: 0%;
+  border-radius: 5px;
+}
+
+.error::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #c1c7d0 transparent transparent transparent;
+}
 
 footer {
   display: flex;
