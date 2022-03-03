@@ -417,15 +417,18 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  height: 330px;
+  row-gap: 24px;
   margin-top: 58px;
 }
 
 .form-inputs li {
   list-style: none;
-  margin-top: 24px;
   width: 100%;
   font-weight: 400;
+}
+
+label {
+  display: none;
 }
 
 input {
@@ -453,8 +456,11 @@ input {
   padding: 12px;
 }
 
-.form .button {
-  width: 129px;
+.form-inputs .button {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .form button {
@@ -480,6 +486,34 @@ input {
 
 .form button:active {
   background: #0a2759;
+}
+
+/* error message for form validation */
+.error {
+  visibility: hidden;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 12px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: #c1c7d0;
+  color: #0a2759;
+  text-align: center;
+  bottom: 125%;
+  left: 0%;
+  border-radius: 5px;
+}
+
+.error::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #c1c7d0 transparent transparent transparent;
 }
 
 footer {
@@ -543,7 +577,7 @@ footer {
   overflow: auto;
   display: block;
   right: 0;
-  height: 90vh;
+  height: 600px;
   width: 80%;
   top: 2%;
   margin: auto;
@@ -554,6 +588,7 @@ footer {
   padding: 10px;
   border-radius: 16px;
   background: #fff;
+  border: 3px solid #dfe1e6;
 }
 
 .pop-up-overlay::-webkit-scrollbar { width: 0 !important; }
@@ -895,12 +930,23 @@ footer {
     height: 330px;
   }
 
-  .form-inputs {
-    display: block;
-  }
-
   input {
     width: 85%;
+  }
+
+  .form .button {
+    text-align: left;
+  }
+
+  .error {
+    text-align: left;
+    width: auto;
+    padding: 12px 5px;
+  }
+
+  .error::after {
+    top: 100%;
+    left: 5%;
   }
 
   .form textarea {
@@ -925,6 +971,7 @@ footer {
     padding: 70px 20px 40px 20px;
     border-radius: 8px;
     height: 70%;
+    border: 3px solid #dfe1e6;
   }
 
   .close {

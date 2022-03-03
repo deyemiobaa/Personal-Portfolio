@@ -216,12 +216,21 @@
     </section>
     <section class="form" id="contact">
       <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-      <form action="https://formspree.io/f/mlezbdnn" method="post">
+      <form id="contact-form" action="https://formspree.io/f/mlezbdnn" method="post" novalidate>
         <ul class="form-inputs">
-          <li><input type="text" id="name" placeholder="Full name" name="user_name" required maxlength="30"></li>
-          <li><input type="email" id="email" placeholder="Email address" name="user_email" required></li>
-          <li><textarea id="message" name="user_message" required maxlength="500">Enter text here</textarea></li>
-          <li class="button"><button type="submit" id="submit">Get in touch</button></li>
+          <li>
+            <label for="name">Full name</label>
+            <input type="text" id="name" placeholder="Full name" name="user_name" required maxlength="30"></li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email address" name="user_email" required></li>
+          <li>
+            <label for="message">Enter a message</label>
+            <textarea id="message" name="user_message" required maxlength="500">Enter text here</textarea></li>
+          <li class="button">
+            <button type="submit" id="submit">Get in touch</button>
+            <span id="form-error" class="error" aria-live="polite">Your email needs to be in lowercase</span>
+          </li>
         </ul>
       </form>
     </section>
@@ -238,11 +247,11 @@
       </div>
       <p class="footer-email">sodiqaderibigbe90@gmail.com</p>
     </footer>
-    <!-- Popup for project cards -->
-    
   </div>
+  <!-- Popup for project cards -->
   <div class="project-popup-window">
   </div>
   <script src="script.js"></script>
+  <script src="form-validation.js"></script>
 </body>
 </html>
