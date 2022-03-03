@@ -16,6 +16,9 @@
     
     gtag('config', 'G-DVQ8FS3P7Y');
   </script>
+  <script src="js/script.js" defer></script>
+  <script src="js/form-validation.js" defer></script>
+  <script src="js/localStorage.js" defer></script>
 </head>
 <body id="page-body" class="body">
   <div id="wrapper" class="wrapper">
@@ -23,37 +26,77 @@
       <nav class="navigation">
         <!-- mobile menu navigation overlay -->
         <div id="mobile-menu-navigation" class="overlay">
-          <a href="javascript:void(0)" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+          <a href="javascript:void(0)" class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
           <ul class="overlay-content">
-            <li class="portfolio page-link"> <a href="#portfolio">Portfolio</a></li>
-            <li class="about page-link"><a href="#about-me">About</a></li>
-            <li class="contact page-link"><a href="#contact">Contact</a></li>
+            <li class="portfolio page-link">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="about page-link">
+              <a href="#about-me">About</a>
+            </li>
+            <li class="contact page-link">
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
         <!-- end of mobile navigation overlay -->
         <ul class="desktop-nav">
-          <li class="portfolio"> <a href="#portfolio">Portfolio</a></li>
-          <li class="about"><a href="#about-me">About</a></li>
-          <li class="contact"><a href="#contact">Contact</a></li>
+          <li class="portfolio">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="about">
+            <a href="#about-me">About</a>
+          </li>
+          <li class="contact">
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
         
         <ul class="mobile-nav">
           <li class="welcome">Welcome</li>
-          <li class="menu-icon"><nav><i class="fa-solid fa-bars"></i></nav></li>
+          <li class="menu-icon">
+            <nav>
+              <i class="fa-solid fa-bars"></i>
+            </nav>
+          </li>
         </ul>
       </nav>
       
       <section class="headline">
         <h1><span>Hey there. I'm Sodiq.</span><br>I'm a Software Developer</h1>
-        <p> I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <p>
+          I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        </p>
         
         <div class="socials">
           <ul>
-            <li><a href="https://github.com/deyemiobaa"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/sodiqa/"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://angel.co/u/sodiq-aderibigbe"><i class="fa-brands fa-angellist"></i></a></li>
-            <li><a href="https://twitter.com/deyemiobaa"><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="	https://medium.com/@deyemiobaa"><i class="fa-brands fa-medium"></i></a></li>
+            <li>
+              <a href="https://github.com/deyemiobaa">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/sodiqa/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://angel.co/u/sodiq-aderibigbe">
+                <i class="fa-brands fa-angellist"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/deyemiobaa">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="	https://medium.com/@deyemiobaa">
+                <i class="fa-brands fa-medium"></i>
+              </a>
+            </li>
           </ul>   
         </div>
         
@@ -71,9 +114,7 @@
           <img src="assets/images/Indicator.png" alt="Indicator">
         </div> 
       </div>
-      
-      
-      
+     
       <div class="recent-works-cards">  
         <div class="works work1"> 
           <div class="work-details"> 
@@ -159,15 +200,17 @@
       
       <div class="about-me-text">
         <h3 class="about-me-title">About me</h3>
-        <p class="about-me-p"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <p class="about-me-p">
+          I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        </p>
         <a href="#" class="about-me-button">Get My Resume</a>
       </div>
       
       <div class="about-me-card">
         <div class="card lang-card">
-          <div class="lang card-img">
+          <figure class="lang card-img">
             <img src="assets/images/lang-icon.png" alt="icon">
-          </div>
+          </figure>
           
           <div class="card-details">
             <p>Languages</p> 
@@ -181,9 +224,9 @@
         </div>
         
         <div class="card framework-card">
-          <div class="framework card-img">
+          <figure class="framework card-img">
             <img src="assets/images/framework-icon.png" alt="icon">
-          </div>
+          </figure>
           <div class="card-details">
             <p>Frameworks</p> 
             <ul class="card-tags"> 
@@ -197,9 +240,9 @@
         </div>
         
         <div class="card skills-card">
-          <div class="skills card-img">
+          <figure class="skills card-img">
             <img src="assets/images/skills-icon.png" alt="icon">
-          </div>
+          </figure>
           <div class="card-details">
             <p>Skills</p> 
             <ul class="card-tags"> 
@@ -215,18 +258,23 @@
       
     </section>
     <section class="form" id="contact">
-      <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
+      <h3>
+        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+      </h3>
       <form id="contact-form" action="https://formspree.io/f/mlezbdnn" method="post" novalidate>
         <ul class="form-inputs">
           <li>
             <label for="name">Full name</label>
-            <input type="text" id="name" placeholder="Full name" name="user_name" required maxlength="30"></li>
+            <input type="text" id="name" placeholder="Full name" name="user_name" required maxlength="30">
+          </li>
           <li>
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Email address" name="user_email" required></li>
+            <input type="email" id="email" placeholder="Email address" name="user_email" required>
+          </li>
           <li>
             <label for="message">Enter a message</label>
-            <textarea id="message" name="user_message" required maxlength="500">Enter text here</textarea></li>
+            <textarea id="message" name="user_message" placeholder="Enter text here..." required maxlength="500"></textarea>
+          </li>
           <li class="button">
             <button type="submit" id="submit">Get in touch</button>
             <span id="form-error" class="error" aria-live="polite">Your email needs to be in lowercase</span>
@@ -238,11 +286,31 @@
     <footer>
       <div class="footer-socials">
         <ul>
-          <li><a href="https://github.com/deyemiobaa"><i class="fa-brands fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/sodiqa/"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href="https://angel.co/u/sodiq-aderibigbe"><i class="fa-brands fa-angellist"></i></a></li>
-          <li><a href="https://twitter.com/deyemiobaa"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="	https://medium.com/@deyemiobaa"><i class="fa-brands fa-medium"></i></a></li>
+          <li>
+            <a href="https://github.com/deyemiobaa">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sodiqa/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://angel.co/u/sodiq-aderibigbe">
+              <i class="fa-brands fa-angellist"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/deyemiobaa">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="	https://medium.com/@deyemiobaa">
+              <i class="fa-brands fa-medium"></i>
+            </a>
+          </li>
         </ul>
       </div>
       <p class="footer-email">sodiqaderibigbe90@gmail.com</p>
@@ -251,7 +319,5 @@
   <!-- Popup for project cards -->
   <div class="project-popup-window">
   </div>
-  <script src="script.js"></script>
-  <script src="form-validation.js"></script>
 </body>
 </html>

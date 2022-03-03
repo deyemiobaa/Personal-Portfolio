@@ -28,7 +28,7 @@ body {
   top: 0;
   border-radius: 0 0 60px 60px;
   box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
-  transition: 1s;
+  transition: 700ms;
 }
 
 .overlay-content {
@@ -488,6 +488,9 @@ input {
   background: #0a2759;
 }
 
+textarea::placeholder {
+  color: #000;
+}
 /* error message for form validation */
 .error {
   visibility: hidden;
