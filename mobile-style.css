@@ -244,8 +244,8 @@ a {
   align-items: center;
   letter-spacing: 0.03em;
   color: #fff;
-  transition: background-color 500ms ease-in;
-  transition: border-radius 500ms ease-out;
+  transition: background-color 500ms ease-in-out;
+  transition: border-radius 500ms ease-in-out;
   justify-content: center;
 }
 
