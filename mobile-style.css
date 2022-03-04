@@ -491,6 +491,7 @@ input {
 textarea::placeholder {
   color: #000;
 }
+
 /* error message for form validation */
 .error {
   visibility: hidden;
