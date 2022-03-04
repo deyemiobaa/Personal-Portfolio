@@ -119,7 +119,7 @@ createProjectContent(projects);
 
 // Loop through eah button and match it to its content
 // Populate the HTML file with the content
-for (let button = 0; button < projectButtons; button += 1) {
+for (let button = 0; button < projectButtons.length; button += 1) {
   for (let content = 0; content < projectContent.length; content += 1) {
     projectButtons[button].addEventListener('click', () => {
       docBody.innerHTML = projectContent[content];
