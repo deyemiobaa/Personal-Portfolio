@@ -345,6 +345,7 @@ a {
 
 .card-img {
   text-align: center;
+  margin: 0;
 }
 
 .card {
