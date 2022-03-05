@@ -59,6 +59,13 @@ a {
   text-decoration: none;
 }
 
+.navigation {
+  background: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
 .mobile-nav {
   list-style: none;
   display: flex;
@@ -685,28 +692,29 @@ footer {
     background: url("assets/images/Header-llustration-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px 0 0;
   }
 
   .wrapper {
     background:
-      url("assets/images/right-about-me.svg"),
-      url("assets/images/left-about-me.svg"),
-      url("assets/images/illustration-1-contact-form-desktop.svg"),
-      url("assets/images/illustration-2-contact-form-desktop.svg"),
-      url("assets/images/illustratoin-3-contact-form-desktop.svg");
+    url("assets/images/right-about-me.svg"),
+    url("assets/images/left-about-me.svg"),
+    url("assets/images/illustration-1-contact-form-desktop.svg"),
+    url("assets/images/illustration-2-contact-form-desktop.svg"),
+    url("assets/images/illustratoin-3-contact-form-desktop.svg");
     background-repeat: no-repeat;
     background-position:
-      top 2200px right 0,
-      top 2390px left -50px,
-      bottom 72.49px left 0,
-      bottom 120px left 274px,
-      bottom 60px right 0;
+    top 2200px right 0,
+    top 2390px left -50px,
+    bottom 72.49px left 0,
+    bottom 120px left 274px,
+    bottom 60px right 0;
   }
 
   .navigation {
     display: flex;
     justify-content: center;
+    height: 50px;
+    align-items: center;
   }
 
   .desktop-nav {
@@ -714,8 +722,8 @@ footer {
     display: flex;
     justify-content: center;
     margin: 0;
-    column-gap: 20px;
     padding: 0;
+    column-gap: 20px;
     font-weight: 500;
     font-weight: 600;
     font-size: 15px;
@@ -726,7 +734,6 @@ footer {
   }
 
   .desktop-nav li {
-    padding-bottom: 5px;
     font-size: 17px;
     letter-spacing: 1px;
     transition: font-size 1s ease-out;
@@ -780,11 +787,11 @@ footer {
     justify-content: center;
     align-items: flex-end;
   }
-
+  
   .bar {
     display: none;
   }
-
+  
   .recent-works {
     height: 1084px;
     width: 90%;
@@ -793,7 +800,7 @@ footer {
     margin: auto;
     padding: 80px 0;
   }
-
+  
   .title,
   .title h2 {
     display: block;
@@ -801,7 +808,7 @@ footer {
     height: 48px;
     margin: auto;
   }
-
+  
   .recent-works-cards {
     height: 988px;
     width: 100%;
@@ -811,28 +818,28 @@ footer {
     row-gap: 32px;
     column-gap: 24px;
   }
-
+  
   .work-details {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-
+  
   .work-details h3 {
     padding: 0;
     margin: 0 !important;
     height: 57px;
   }
-
+  
   .work-details a {
     margin: 0;
   }
-
+  
   .language-tags {
     height: 32px;
     margin: 0;
   }
-
+  
   .about-me {
     width: 90%;
     margin: 112px auto 0;
@@ -840,7 +847,7 @@ footer {
     height: 700px;
     justify-content: space-between;
   }
-
+  
   .about-me-text {
     width: 70%;
     margin: 0 auto;
@@ -848,16 +855,16 @@ footer {
     height: 300px;
     justify-content: space-between;
   }
-
+  
   .about-me-text h4 {
     margin: 0;
   }
-
+  
   .about-me-text p {
     height: 96px;
     margin: 0;
   }
-
+  
   .about-me-card {
     height: 352px;
     padding: 4px 8px;
@@ -865,50 +872,50 @@ footer {
     grid-template-columns: 30% 30% 30%;
     justify-content: space-between;
   }
-
+  
   .card {
     margin: 0;
     display: grid;
     grid-template-rows: 128px 144px;
     justify-content: space-evenly;
   }
-
+  
   .card-img img {
     display: none;
   }
-
+  
   .lang {
     background: url("assets/images/lang-icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .framework {
     background: url("assets/images/framework-icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .skills {
     background: url("assets/images/skills-icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .card-details {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  
   .card-details ul {
     margin: 24px 0 0;
   }
-
+  
   .card-tags {
     margin: 24px 0;
   }
-
+  
   .form {
     margin: auto auto 142px;
     width: 90%;
@@ -920,7 +927,7 @@ footer {
     background: none;
     align-items: center;
   }
-
+  
   .form h3 {
     height: 256px;
     font-size: 26px;
@@ -929,34 +936,34 @@ footer {
     display: flex;
     align-items: center;
   }
-
+  
   form {
     height: 330px;
   }
-
+  
   input {
     width: 85%;
   }
-
+  
   .form .button {
     text-align: left;
   }
-
+  
   .error {
     text-align: left;
     width: auto;
     padding: 12px 5px;
   }
-
+  
   .error::after {
     top: 100%;
     left: 5%;
   }
-
+  
   .form textarea {
     width: 85%;
   }
-
+  
   footer {
     height: 60px;
     display: flex;
@@ -964,11 +971,11 @@ footer {
     border-top: 1px solid #dfe1e6;
     border-bottom: 1px solid #dfe1e6;
   }
-
+  
   .footer-email {
     display: none;
   }
-
+  
   /* Popup for project cards desktop */
   .pop-up-overlay {
     top: 5%;
@@ -977,26 +984,26 @@ footer {
     height: 70%;
     border: 3px solid #dfe1e6;
   }
-
+  
   .close {
     right: 0;
     margin-right: 20px;
   }
-
+  
   .pop-up-overlay-content {
     display: block;
   }
-
+  
   .buttons-container {
     float: right;
     width: 40%;
   }
-
+  
   .pop-up-overlay-content h2 {
     width: 65%;
     margin-top: 10px;
   }
-
+  
   .button-items {
     justify-content: flex-end;
     gap: 20px;
