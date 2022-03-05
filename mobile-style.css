@@ -22,7 +22,7 @@ body {
   width: 0;
   position: fixed;
   overflow-x: hidden;
-  z-index: 1;
+  z-index: 55;
   margin: 0;
   left: 0;
   top: 0;
@@ -63,6 +63,7 @@ a {
   background: #fff;
   position: fixed;
   left: 0;
+  z-index: 10;
   right: 0;
 }
 
@@ -466,6 +467,7 @@ input {
 .form-inputs .button {
   text-align: center;
   position: relative;
+  z-index: 1;
   display: inline-block;
   cursor: pointer;
 }
@@ -507,7 +509,7 @@ textarea::placeholder {
   padding: 12px 0;
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   background-color: #c1c7d0;
   color: #0a2759;
   text-align: center;
