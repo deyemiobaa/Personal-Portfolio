@@ -9,13 +9,7 @@ form.addEventListener('submit', (event) => {
     setTimeout(() => {
       errorMsg.style.visibility = 'hidden';
     }, 5000);
-  } else if (email.validity.typeMismatch) {
-    event.preventDefault();
-    errorMsg.textContent = 'Please enter a valid email address';
-    errorMsg.style.visibility = 'visible';
-    setTimeout(() => {
-      errorMsg.style.visibility = 'hidden';
-    }, 5000);
+    email.value = email.value.toLowerCase();
   } else {
     errorMsg.style.visibility = 'hidden';
   }
