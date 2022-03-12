@@ -4,6 +4,10 @@ const emailAddress = document.querySelector('#email');
 const message = document.querySelector('#message');
 const reset = document.getElementById('reset');
 
+fullName.value = ''
+emailAddress.value = ''
+message.value = ''
+      
 function dataStorage() {
   const user = {
     userFullName: fullName.value,
