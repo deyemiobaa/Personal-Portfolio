@@ -9,7 +9,7 @@ body {
   margin: auto;
 }
 
-.desktop-nav {
+.desktop-nav, .controls {
   display: none;
 }
 
@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  height: 95vh;
+  height: 90vh;
   width: 0;
   position: fixed;
   overflow-x: hidden;
@@ -33,7 +33,7 @@ body {
 
 .overlay-content {
   display: none;
-  padding: 15px 20px;
+  padding: 35px 40px;
   width: 30%;
   list-style: none;
   margin: 30px 0;
@@ -41,9 +41,9 @@ body {
 }
 
 .overlay .close-btn {
-  font-size: 25px;
-  padding: 0 20px;
-  margin: 30px 10px 30px 0;
+  font-size: 35px;
+  padding: 0 25px;
+  margin: 20px 0 0 0;
 }
 
 .overlay li {
@@ -199,11 +199,11 @@ a {
 
 .work-details {
   display: grid;
-  grid-template-rows: 33.33% 33.33% 33.33%;
-  height: 222px;
+  grid-template-rows: 1.5fr 1fr 1fr;
+  height: 50%;
+  padding: 10px;
   background: #fff;
   border-radius: 8px;
-  align-content: space-between;
   align-items: center;
   justify-items: center;
 }
@@ -219,12 +219,11 @@ a {
 }
 
 .language-tags {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 0 11px;
+  display: flex;
+  justify-content: center;
   padding: 0;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .language-tags li {
@@ -338,8 +337,7 @@ a {
 .about-me-card {
   padding: 1px;
   height: 1106px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
 }
 
@@ -381,6 +379,7 @@ a {
   margin-top: 24px;
   flex-wrap: wrap;
   width: 100%;
+  gap: 10px;
   margin-right: 12px;
   margin-left: 12px;
   justify-content: center;
@@ -397,8 +396,6 @@ a {
   border-radius: 8px;
   background: #fff;
   text-align: center;
-  margin-bottom: 8px;
-  margin-right: 8px;
 }
 
 .form {
@@ -570,6 +567,25 @@ footer {
 }
 
 /* popup for project cards mobile */
+.project-popup-window {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 2%;
+  left: 0;
+  right: 0;
+  bottom: 1%;
+  width: 80%;
+  overflow: auto;
+  margin: auto;
+  padding: 10px;
+  border-radius: 16px;
+  background: #fff;
+  border: 3px solid #dfe1e6;
+}
+
+.project-popup-window::-webkit-scrollbar { width: 0 !important; }
+
 .blur {
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -582,44 +598,30 @@ footer {
 }
 
 .lang-tags,
-.button-items {
+.button-items,
+.close {
   display: flex;
 }
 
 .pop-up-overlay {
-  left: 0;
-  overflow: auto;
   display: block;
-  right: 0;
-  height: 90vh;
-  width: 80%;
-  top: 2%;
-  margin: auto;
-  position: fixed;
-  z-index: 1;
   align-items: flex-end;
   flex-direction: column;
-  padding: 10px;
-  border-radius: 16px;
-  background: #fff;
-  border: 3px solid #dfe1e6;
 }
 
-.pop-up-overlay::-webkit-scrollbar { width: 0 !important; }
-
 .close {
-  position: absolute;
-  right: 7%;
-  top: 3%;
+  justify-content: flex-end;
 }
 
 .pop-up-overlay-image {
   width: 100%;
+  height: 100%;
 }
 
 .pop-up-overlay-content {
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
 }
 
 .pop-up-overlay-content a {
@@ -631,7 +633,6 @@ footer {
   font-weight: 600;
   font-size: 32px;
   margin: 0;
-  line-height: 44px;
   color: #172b4d;
 }
 
@@ -645,12 +646,14 @@ footer {
 
 .lang-tags {
   list-style: none;
+  flex-wrap: wrap;
   padding: 0;
+  margin: 0;
   gap: 7px;
 }
 
 .lang-tags li {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -660,17 +663,15 @@ footer {
   border-radius: 4px;
 }
 
-.buttons-container {
-  order: 1;
-}
-
 .button-items {
   list-style: none;
   padding: 0;
+  margin: 0;
   justify-content: space-between;
 }
 
-.button-items li {
+.button-items a {
+  color: #fff;
   font-size: 17px;
   line-height: 24px;
   padding: 10px 20px;
@@ -683,43 +684,43 @@ footer {
     height: 3650px;
     margin: 0;
   }
-
+  
   .close-btn,
   .overlay,
   .mobile-nav {
     display: none;
   }
-
+  
   header {
     height: 900px;
     background: url("assets/images/Header-llustration-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
   }
-
+  
   .wrapper {
     background:
-      url("assets/images/right-about-me.svg"),
-      url("assets/images/left-about-me.svg"),
-      url("assets/images/illustration-1-contact-form-desktop.svg"),
-      url("assets/images/illustration-2-contact-form-desktop.svg"),
-      url("assets/images/illustratoin-3-contact-form-desktop.svg");
+    url("assets/images/right-about-me.svg"),
+    url("assets/images/left-about-me.svg"),
+    url("assets/images/illustration-1-contact-form-desktop.svg"),
+    url("assets/images/illustration-2-contact-form-desktop.svg"),
+    url("assets/images/illustratoin-3-contact-form-desktop.svg");
     background-repeat: no-repeat;
     background-position:
-      top 2200px right 0,
-      top 2390px left -50px,
-      bottom 72.49px left 0,
-      bottom 120px left 274px,
-      bottom 60px right 0;
+    top 2200px right 0,
+    top 2390px left -50px,
+    bottom 72.49px left 0,
+    bottom 120px left 274px,
+    bottom 60px right 0;
   }
-
+  
   .navigation {
     display: flex;
     justify-content: center;
     height: 50px;
     align-items: center;
   }
-
+  
   .desktop-nav {
     list-style: none;
     display: flex;
@@ -735,22 +736,22 @@ footer {
     align-items: center;
     color: #344563;
   }
-
+  
   .desktop-nav li {
     font-size: 17px;
     letter-spacing: 1px;
     transition: font-size 1s ease-out;
   }
-
+  
   .desktop-nav li:hover {
     font-size: 25px;
     border-bottom: 2px solid #36b37f;
   }
-
+  
   a {
     text-decoration: none;
   }
-
+  
   .headline {
     background: none;
     display: flex;
@@ -759,7 +760,7 @@ footer {
     margin: auto;
     padding: 160px 0;
   }
-
+  
   .headline h1 {
     overflow: hidden;
     height: 114px;
@@ -768,33 +769,33 @@ footer {
     margin: 0 auto;
     animation: typing 3s steps(200, end);
   }
-
+  
   @keyframes typing {
     from {
       width: 0;
     }
-
+    
     to {
       width: 100%;
     }
   }
-
+  
   .headline p {
     height: 96px;
     margin: 0;
   }
-
+  
   .arrow {
     display: flex;
     height: 114px;
     justify-content: center;
     align-items: flex-end;
   }
-
+  
   .bar {
     display: none;
   }
-
+  
   .recent-works {
     height: 1084px;
     width: 90%;
@@ -803,7 +804,7 @@ footer {
     margin: auto;
     padding: 80px 0;
   }
-
+  
   .title,
   .title h2 {
     display: block;
@@ -811,38 +812,33 @@ footer {
     height: 48px;
     margin: auto;
   }
-
+  
   .recent-works-cards {
     height: 988px;
     width: 100%;
     margin: 52px auto 0;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 32px;
     column-gap: 24px;
   }
-
+  
   .work-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
   }
-
+  
   .work-details h3 {
     padding: 0;
     margin: 0 !important;
-    height: 57px;
   }
-
+  
   .work-details a {
     margin: 0;
   }
-
+  
   .language-tags {
-    height: 32px;
     margin: 0;
   }
-
+  
   .about-me {
     width: 90%;
     margin: 112px auto 0;
@@ -850,7 +846,7 @@ footer {
     height: 700px;
     justify-content: space-between;
   }
-
+  
   .about-me-text {
     width: 70%;
     margin: 0 auto;
@@ -858,67 +854,67 @@ footer {
     height: 300px;
     justify-content: space-between;
   }
-
+  
   .about-me-text h4 {
     margin: 0;
   }
-
+  
   .about-me-text p {
     height: 96px;
     margin: 0;
   }
-
+  
   .about-me-card {
     height: 352px;
     padding: 4px 8px;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
   }
-
+  
   .card {
     margin: 0;
     display: grid;
     grid-template-rows: 128px 144px;
     justify-content: space-evenly;
   }
-
+  
   .card-img img {
     display: none;
   }
-
+  
   .lang {
     background: url("assets/images/lang-icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .framework {
     background: url("assets/images/framework-icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .skills {
     background: url("assets/images/skills-icon.png");
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .card-details {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  
   .card-details ul {
     margin: 24px 0 0;
   }
-
+  
   .card-tags {
     margin: 24px 0;
   }
-
+  
   .form {
     margin: auto auto 142px;
     width: 90%;
@@ -930,7 +926,7 @@ footer {
     background: none;
     align-items: center;
   }
-
+  
   .form h3 {
     height: 256px;
     font-size: 26px;
@@ -939,34 +935,34 @@ footer {
     display: flex;
     align-items: center;
   }
-
+  
   form {
     height: 330px;
   }
-
+  
   input {
     width: 85%;
   }
-
+  
   .form .button {
     text-align: left;
   }
-
+  
   .error {
     text-align: left;
     width: auto;
     padding: 12px 5px;
   }
-
+  
   .error::after {
     top: 100%;
     left: 5%;
   }
-
+  
   .form textarea {
     width: 85%;
   }
-
+  
   footer {
     height: 60px;
     display: flex;
@@ -974,42 +970,57 @@ footer {
     border-top: 1px solid #dfe1e6;
     border-bottom: 1px solid #dfe1e6;
   }
-
+  
   .footer-email {
     display: none;
   }
-
+  
   /* Popup for project cards desktop */
-  .pop-up-overlay {
-    top: 5%;
-    padding: 70px 20px 40px 20px;
-    border-radius: 8px;
-    height: 70%;
+  .project-popup-window {
+    top: 0;
+    bottom: 0;
     border: 3px solid #dfe1e6;
+    border-radius: 8px;
+    height: fit-content;
+  }
+  .pop-up-image-container {
+    margin: 0;
   }
 
+  .pop-up-overlay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+  }
   .close {
-    right: 0;
-    margin-right: 20px;
+    cursor: pointer;
   }
-
-  .pop-up-overlay-content {
-    display: block;
-  }
-
-  .buttons-container {
-    float: right;
-    width: 40%;
-  }
-
+  
+  
   .pop-up-overlay-content h2 {
     width: 65%;
-    margin-top: 10px;
   }
-
+  
   .button-items {
-    justify-content: flex-end;
-    gap: 20px;
+    display: flex;
+    gap: 10%;
     margin: 0;
+    justify-content: flex-start;
+  }
+  
+  .controls {
+    display: flex;
+    width: 70%;
+    margin: 50px auto 10px auto;
+    justify-content: space-between;
+  }
+  
+  .controls > button {
+    background: none;
+    border: 0;
+    font-size: 15px;
+    color: #172b4d;
+    cursor: pointer;
   }
 }

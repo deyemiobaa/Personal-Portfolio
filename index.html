@@ -16,9 +16,6 @@
     
     gtag('config', 'G-DVQ8FS3P7Y');
   </script>
-  <script src="js/script.js" defer></script>
-  <script src="js/form-validation.js" defer></script>
-  <script src="js/localStorage.js" defer></script>
 </head>
 <body id="page-body" class="body">
   <div id="wrapper" class="wrapper">
@@ -116,83 +113,6 @@
       </div>
      
       <div class="recent-works-cards">  
-        <div class="works work1"> 
-          <div class="work-details"> 
-            <h3>Multi-Post Stories Gain+Glory</h3> 
-            <ul class="language-tags"> 
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button class="works-button">See Project</button>
-          </div>
-        </div>
-        
-        <div class="works work2">
-          <div class="work-details"> 
-            <h3>Multi-Post Stories Gain+Glory</h3>  
-            <ul class="language-tags"> 
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button class="works-button">See Project</button>
-          </div>
-        </div>
-        
-        <div class="works work3">
-          <div class="work-details"> 
-            <h3>Multi-Post Stories Gain+Glory</h3>  
-            <ul class="language-tags"> 
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button class="works-button">See Project</button>
-          </div>
-        </div>
-        
-        <div class="works work4">
-          <div class="work-details"> 
-            <h3>Multi-Post Stories Gain+Glory</h3>  
-            <ul class="language-tags"> 
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button class="works-button">See Project</button>
-          </div>
-        </div>
-        
-        <div class="works work5">
-          <div class="work-details"> 
-            <h3>Multi-Post Stories Gain+Glory</h3> 
-            <ul class="language-tags"> 
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button class="works-button">See Project</button>
-          </div>
-        </div>
-        
-        <div class="works work6">
-          <div class="work-details"> 
-            <h3>Multi-Post Stories Gain+Glory</h3> 
-            <ul class="language-tags"> 
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button class="works-button">See Project</button>
-          </div>
-        </div>
       </div>
     </section>
     
@@ -319,6 +239,42 @@
   </div>
   <!-- Popup for project cards -->
   <div class="project-popup-window">
+    <span class="close">
+      <img src="assets/images/Disabled.svg" alt="close">
+    </span>
+    <div class="pop-up-overlay">
+      <div class="pop-up-image-container">
+        <img class="pop-up-overlay-image" src="." alt="">
+      </div>
+      <div class="pop-up-overlay-content">
+        <h2 class="project-title">Title</h2>
+        <ul class="lang-tags">
+        </ul>
+        <p class="description"></p>
+        <div class="buttons-container">
+          <div class="button-items">
+            <a href="" class="live-view">
+              See Live <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href="" class="source-code">
+              See Source <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button type="button" class="prevProject">
+        <i class="fa-solid fa-arrow-left-long"></i> Previous Project
+      </button>
+      <button type="button" class="nextProject">
+        Next Project <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
+    </div>
   </div>
+  <script src="js/mobileMenu.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/localStorage.js"></script>
+  <script src="js/projects.js"></script>
 </body>
 </html>
