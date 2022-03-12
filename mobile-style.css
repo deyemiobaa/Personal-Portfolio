@@ -19,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  height: 90vh;
+  height: 95vh;
   width: 0;
   position: fixed;
   overflow-x: hidden;
@@ -575,7 +575,7 @@ footer {
   top: 2%;
   left: 0;
   right: 0;
-  bottom: 1%;
+  height: max-content;
   width: 80%;
   overflow: auto;
   margin: auto;
@@ -741,11 +741,10 @@ footer {
   .desktop-nav li {
     font-size: 17px;
     letter-spacing: 1px;
-    transition: font-size 1s ease-out;
+    padding-bottom: 2px;
   }
 
   .desktop-nav li:hover {
-    font-size: 25px;
     border-bottom: 2px solid #36b37f;
   }
 
