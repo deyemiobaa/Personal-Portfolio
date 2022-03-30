@@ -198,6 +198,22 @@ a {
   border-radius: 8px;
 }
 
+.work0 {
+  background-image: url("assets/images/projects/todolist.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.work1,
+.work2,
+.work3,
+.work4,
+.work5 {
+  background-image: url("assets/images/projects/defaultgif.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .work-details {
   display: grid;
   grid-template-rows: 1.5fr 1fr 1fr;

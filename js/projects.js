@@ -14,70 +14,70 @@ const nextButton = document.querySelector('.nextProject');
 const projectsData = [
   {
     id: 0,
-    name: 'Practice to Perfect',
-    image: 'assets/images/Snapshoot-Portfolio.svg',
+    name: 'To Do List',
+    image: 'assets/images/projects/todolist.svg',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
-    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
+      "A web app that helps you keep track of your most important tasks. You can add, delete, edits tasks as you wish, and they always stay on your browser. It's a simple and easy to use app.",
+    technologies: ['JavaScript', 'HTML/CSS', 'Webpack'],
+    live: 'https://deyemiobaa.github.io/ToDo-List/',
+    source: 'https://github.com/deyemiobaa/ToDo-List'
   },
   {
     id: 1,
-    name: 'Keeping track of hundreds of components',
-    image: 'assets/images/Snapshoot-Portfolio.svg',
+    name: 'Project under construction',
+    image: 'assets/images/projects/default.svg',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "I'm learning and working hard to build amazing projects. Expect something new soon. In the mean time check out my other small  projects on GitHub.",
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
-    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/'
   },
   {
     id: 2,
-    name: 'A stitch in time, saves nine',
-    image: 'assets/images/Snapshoot-Portfolio.svg',
+    name: 'Project under construction',
+    image: 'assets/images/projects/default.svg',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "I'm learning and working hard to build amazing projects. Expect something new soon. In the mean time check out my other small  projects on GitHub.",
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
-    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/'
   },
   {
     id: 3,
-    name: 'Remember where you come from',
-    image: 'assets/images/Snapshoot-Portfolio.svg',
+    name: 'Project under construction',
+    image: 'assets/images/projects/default.svg',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "I'm learning and working hard to build amazing projects. Expect something new soon. In the mean time check out my other small  projects on GitHub.",
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
-    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/'
   },
   {
     id: 4,
-    name: 'The Gallery Dept.',
-    image: 'assets/images/Snapshoot-Portfolio.svg',
+    name: 'Project under construction',
+    image: 'assets/images/projects/default.svg',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "I'm learning and working hard to build amazing projects. Expect something new soon. In the mean time check out my other small  projects on GitHub.",
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
-    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/'
   },
   {
     id: 5,
-    name: 'A trip to Mars',
-    image: 'assets/images/Snapshoot-Portfolio.svg',
+    name: 'Project under construction',
+    image: 'assets/images/projects/default.svg',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "I'm learning and working hard to build amazing projects. Expect something new soon. In the mean time check out my other small  projects on GitHub.",
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     live: 'https://deyemiobaa.github.io/Personal-Portfolio/',
-    source: 'https://github.com/deyemiobaa/Personal-Portfolio/',
+    source: 'https://github.com/deyemiobaa/Personal-Portfolio/'
   },
 ];
 
 projectsData.forEach((project) => {
   recentWorks.innerHTML
     += `
-    <div class="works">
+    <div class="works work${project.id}">
       <div class="work-details">
         <h3>${project.name}</h3>
         <ul class="language-tags">
